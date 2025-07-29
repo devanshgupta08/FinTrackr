@@ -1,4 +1,4 @@
-````markdown
+
 # ✨ Finance Tracker 📊
 
 > A **full-stack personal finance management app** built with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to simplify expense tracking, financial analysis, and secure user authentication.  
