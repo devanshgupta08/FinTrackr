@@ -1,179 +1,153 @@
-# ✨ FinTrackr 📝
+# **Final GitHub README**
 
-> A **full-stack blogging platform** built with the **MERN stack** (MongoDB, Express.js, React, Node.js), offering smooth content management, user interaction, and modern web features.  
+````markdown
+# ✨ Finance Tracker 📊
+
+> A **full-stack personal finance management app** built with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to simplify expense tracking, financial analysis, and secure user authentication.  
 >  
-> ![Hero Section](Screenshots/herodark.png)
-
----
-
-## 🚀 Deployment
-
-- 🔗 **Frontend**: [Vercel](https://blog-space-blond.vercel.app)  
-- 🔗 **Backend**: [Render](https://blogspace-1-kjm6.onrender.com)
+> 🎥 **[Watch Demo Video](<YOUR_VIDEO_LINK_HERE>)**
 
 ---
 
 ## 🌟 Features Overview
 
-<details open>
-<summary>🔐 <strong>Google OAuth Login</strong></summary>
-
-Users can sign in using their **Google account**, ensuring secure and fast authentication.  
-No need to remember separate passwords!
-
-<br>
-
-![Google OAuth Login](Screenshots/login.png)
-
-</details>
+### 🔐 User Authentication (Email + Google OAuth)
+- Secure login and signup with email & password  
+- **Google OAuth login** for quick authentication  
+- JWT-based session handling for safe and persistent login
 
 ---
 
-<details open>
-<summary>🏠 <strong>Home Page with Blogs</strong></summary>
-
-The homepage displays all blog posts fetched from the backend, featuring pagination and real-time updates.  
-Users can scroll through featured content easily.
-
-<br>
-
-![Home Page](Screenshots/allpost.png)
-
-</details>
+### 💰 Transactions Management
+- Add, update, and delete **income & expense** records  
+- Categorize transactions for better organization  
+- View complete transaction history at any time
 
 ---
 
-<details open>
-<summary>🔍 <strong>Search & Filter Blogs</strong></summary>
-
-Users can search blog posts by **title or content**, and filter results by **date** for quicker access to relevant posts.
-
-<br>
-
-![Search and Filter](Screenshots/search.png)
-
-</details>
+### 📥 Bulk Data Import from PDF
+- Upload **PDF files** containing transaction data  
+- Automatically parse and extract data  
+- Add multiple transactions **in bulk** with one click
 
 ---
 
-<details open>
-<summary>✍️ <strong>Admin-Only Blog Creation</strong></summary>
-
-Only **admin users** can create and publish blog posts.  
-The form is optimized using **React Hook Form** and **Zod** for validation.
-
-<br>
-
-![Create Blog](Screenshots/createpost.png)  
-![Create Blog](Screenshots/createpost2.png)
-
-</details>
+### 📄 Receipt Import (POS)
+- Upload **POS receipts** directly  
+- Automatically extract **transaction date** and **total amount** using regex parsing  
+- Quick conversion of paper receipts into digital transactions
 
 ---
 
-<details open>
-<summary>📝 <strong>Blog Detail Page</strong></summary>
-
-Clicking on a blog opens the full content, where users can **read**, **like**, and **comment** on the post.
-
-<br>
-
-![Blog Detail View](Screenshots/post.png)
-
-</details>
+### 📊 Analytics & Insights
+**Three powerful visualizations to understand your finances:**
+1. **Category-wise Expense Distribution (Pie Chart)** – See which categories take the biggest share of your spending.  
+2. **Income vs Expense Overview (Bar Chart)** – Track monthly or yearly trends of earnings vs expenses.  
+3. **Cash Flow Trend (Line Graph)** – Monitor financial health and flow over time.
 
 ---
 
-<details open>
-<summary>❤️ <strong>Like & Comment</strong></summary>
-
-Users can like blog posts and leave comments to engage with authors and readers.
-
-<br>
-
-![Like and Comment](Screenshots/comment.png)
-
-</details>
+### 📅 Date Filter for Transactions
+- Filter transactions by **start date** and **end date**  
+- Easily analyze spending within specific periods  
+- Works seamlessly with pagination & analytics
 
 ---
 
-<details open>
-<summary>⚙️ <strong>Admin Dashboard</strong></summary>
-
-Admins have access to a powerful dashboard to **manage users, posts, and comments**.  
-They can update or delete any content as needed.
-
-<br>
-
-![Admin Dashboard](Screenshots/dashboard1.png)  
-![Admin Dashboard](Screenshots/dashboard2.png)  
-![Admin Dashboard](Screenshots/dashboard3.png)  
-![Admin Dashboard](Screenshots/dashboard4.png)
-
-</details>
+### 🌓 Dark / Light Theme Toggle
+- Switch between **light and dark modes** instantly  
+- Theme preference is saved and persists between sessions
 
 ---
 
-<details open>
-<summary>🖼️ <strong>Cloudinary Image Upload</strong></summary>
-
-Images for blogs and profiles are uploaded directly to **Cloudinary**, ensuring fast delivery and automatic optimization.
-
-</details>
+### 👤 Profile Management
+- Update profile information like name and email  
+- Change password securely  
+- Upload & manage profile avatar image
 
 ---
 
-<details open>
-<summary>🌓 <strong>Theme Toggle (Dark / Light Mode)</strong></summary>
-
-Switch between **light and dark themes** based on user preference.  
-Theme choice is **persisted across sessions**.
-
-<br>
-
-**Light Mode**  
-<br>
-![Light Mode](Screenshots/herolight.png)
-
-<br>
-
-**Dark Mode**  
-<br>
-![Dark Mode](Screenshots/herodark.png)
-
-</details>
-
----
-
-<details open>
-<summary>👤 <strong>Profile Management</strong></summary>
-
-Users can update their **name, profile picture**, and other details from their profile section.
-
-<br>
-
-![Profile Page](Screenshots/profile.png)
-
-</details>
-
----
-
-<details open>
-<summary>📑 <strong>Pagination</strong></summary>
-
-Large lists of blog posts are **paginated** for better performance and smoother user experience.
-
-</details>
+### 📑 Pagination (Frontend & Backend)
+- **Backend Pagination:** Efficient transaction fetching using query parameters (`page`, `limit`)  
+- **Frontend Pagination:** Smooth page navigation for large transaction lists  
+- Improves performance and user experience when handling big data
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Layer        | Tech Stack                                                                       |
-|--------------|-----------------------------------------------------------------------------------|
-| **Frontend** | React, React Router DOM, Redux, React Query, DaisyUI, React Hook Form            |
-| **Backend**  | Node.js, Express.js, MongoDB, Mongoose, Zod, bcrypt, Cloudinary                  |
-| **Auth**     | Google OAuth                                                                     |
-| **Utilities**| Slugify, CORS, JWT                                                               |
+| Layer        | Tech Stack                                                                     |
+|--------------|---------------------------------------------------------------------------------|
+| **Frontend** | React, React Router DOM, Redux Toolkit, React Query, TailwindCSS, DaisyUI      |
+| **Backend**  | Node.js, Express.js, MongoDB, Mongoose, Multer, Cloudinary, JWT                |
+| **Auth**     | Google OAuth, bcrypt                                                           |
+| **Utilities**| Regex Parsing for Receipts, PDF Parser, CORS, FormData                         |
 
 ---
+
+## 🚀 Project Setup
+
+### **Prerequisites**
+- Node.js >= 16
+- MongoDB running locally or Atlas connection string
+
+### **Steps to Run Locally**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/finance-tracker.git
+   cd finance-tracker
+````
+
+2. **Install dependencies**
+
+   ```bash
+   # Install backend dependencies
+   cd backend
+   npm install
+
+   # Install frontend dependencies
+   cd ../frontend
+   npm install
+   ```
+
+3. **Environment variables**
+   Create a `.env` file in both **backend** and **frontend** with:
+
+   ```
+   # Backend .env
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_jwt_secret
+   GOOGLE_CLIENT_ID=your_google_client_id
+   GOOGLE_CLIENT_SECRET=your_google_client_secret
+   CLOUDINARY_URL=your_cloudinary_url
+
+   # Frontend .env
+   VITE_API_URL=http://localhost:8000
+   ```
+
+4. **Run the app**
+
+   ```bash
+   # Run backend
+   cd backend
+   npm run dev
+
+   # Run frontend
+   cd ../frontend
+   npm start
+   ```
+
+5. **Open in browser**
+
+   * Frontend: `http://localhost:3000`
+   * Backend: `http://localhost:8000`
+
+---
+
+## 🎥 Demo
+
+👉 **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)**
+
+---
+
+```
