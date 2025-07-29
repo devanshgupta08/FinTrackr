@@ -161,6 +161,6 @@ npm start
 
 ## 🎥 Demo
 
-👉 **[Watch Demo Video](https://www.youtube.com/watch?v=3Jipl6IszN)**
+👉 **[Watch Demo Video](https://www.youtube.com/watch?v=3Jipl6IszNA)**
 
 ---
