@@ -3,7 +3,7 @@
 
 > A **full-stack personal finance management app** built with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to simplify expense tracking, financial analysis, and secure user authentication.  
 >  
-> 🎥 **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)**
+> 🎥 **[Watch Demo Video](https://www.youtube.com/watch?v=3Jipl6IszNA)**
 
 ---
 
@@ -157,6 +157,6 @@ npm start
 
 ## 🎥 Demo
 
-👉 **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)**
+👉 **[Watch Demo Video](https://www.youtube.com/watch?v=3Jipl6IszN)**
 
 ---
