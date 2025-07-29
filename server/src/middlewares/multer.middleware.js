@@ -1,31 +1,33 @@
 import multer from "multer";
-import path from "path";
 
 // Configure Multer storage
 const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, "./public/temp"); // Temporary storage directory
-    },
-    filename: (req, file, cb) => {
-        const uniqueName = Date.now() + path.extname(file.originalname);
-        cb(null, uniqueName); // Save with timestamp + original extension
-    },
+	destination: (req, file, cb) => {
+		cb(null, "./public/temp"); // Temporary storage directory
+	},
+	filename: (req, file, cb) => {
+		cb(null, file.originalname); // Use the original name of the file
+	},
 });
 
 // Configure Multer for file uploads
 const upload = multer({
-    storage,
-    fileFilter: (req, file, cb) => {
-        const allowedTypes = ["application/pdf", "image/jpeg", "image/png"];
-        if (allowedTypes.includes(file.mimetype)) {
-            cb(null, true);
-        } else {
-            cb(new Error("Only PDF, JPEG, and PNG files are allowed"), false);
-        }
-    },
-    limits: {
-        fileSize: 1024 * 1024 * 10, // 10MB file size limit
-    },
+	storage: storage,
+	fileFilter: (req, file, cb) => {
+		// Validate file types
+		if (
+			file.mimetype === "image/png" ||
+			file.mimetype === "image/jpeg" ||
+			file.mimetype === "application/pdf"
+		) {
+			cb(null, true);
+		} else {
+			cb(new Error("Only .png and .jpg files are allowed"), false);
+		}
+	},
+	limits: {
+		fileSize: 1024 * 1024 * 5, // 5MB file size limit
+	},
 });
 
 export { upload };
