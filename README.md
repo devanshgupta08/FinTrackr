@@ -69,7 +69,6 @@
 - **Backend Pagination:** Efficient transaction fetching using query parameters (`page`, `limit`)  
 - **Frontend Pagination:** Smooth page navigation for large transaction lists  
 - Improves performance and user experience when handling big data
-
 ---
 
 ## 🛠️ Technologies Used
@@ -93,19 +92,19 @@
 
 #### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/finance-tracker.git
-cd finance-tracker
+git clone https://github.com/devanshgupta08/FinTrackr
+cd FinTrackr
 ````
 
 #### 2. Install dependencies
 
 ```bash
 # Install backend dependencies
-cd backend
+cd server
 npm install
 
 # Install frontend dependencies
-cd ../frontend
+cd ../client
 npm install
 ```
 
@@ -115,25 +114,37 @@ Create a `.env` file in both **backend** and **frontend** with:
 
 ```
 # Backend .env
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-CLOUDINARY_URL=your_cloudinary_url
+PORT = 8000
+MONGO_DB_URL = mongo_url
+ALLOWED_ORIGINS = backend_url
+CREDENTIALS = true
+NODE_ENV = development
 
+ACCESS_TOKEN_SECRET = access_token
+ACCESS_TOKEN_EXPIRY = 1d
+
+REFRESH_TOKEN_SECRET = refresh_token
+REFRESH_TOKEN_EXPIRY = 4d
+
+CLOUDINARY_CLOUD_NAME= your_cloudinary_name
+CLOUDINARY_API_KEY= your_cloudinary_api_key
+CLOUDINARY_API_SECRET= you_cloudinary_api_seceret
+
+GOOGLE_CLIENT_ID= google_client_id
 # Frontend .env
-VITE_API_URL=http://localhost:8000
+VITE_GOOGLE_CLIENT_ID = your_google_client_id
+VITE_REACT_APP_API_URL=http://localhost:8000
 ```
 
 #### 4. Run the app
 
 ```bash
 # Run backend
-cd backend
+cd server
 npm run dev
 
 # Run frontend
-cd ../frontend
+cd ../client
 npm start
 ```
 
