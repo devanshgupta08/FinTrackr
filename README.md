@@ -1,11 +1,9 @@
-# **Final GitHub README**
-
 ````markdown
 # ✨ Finance Tracker 📊
 
 > A **full-stack personal finance management app** built with the **MERN stack** (MongoDB, Express.js, React, Node.js), designed to simplify expense tracking, financial analysis, and secure user authentication.  
 >  
-> 🎥 **[Watch Demo Video](<YOUR_VIDEO_LINK_HERE>)**
+> 🎥 **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)**
 
 ---
 
@@ -41,9 +39,9 @@
 
 ### 📊 Analytics & Insights
 **Three powerful visualizations to understand your finances:**
-1. **Category-wise Expense Distribution (Pie Chart)** – See which categories take the biggest share of your spending.  
-2. **Income vs Expense Overview (Bar Chart)** – Track monthly or yearly trends of earnings vs expenses.  
-3. **Cash Flow Trend (Line Graph)** – Monitor financial health and flow over time.
+1. **Category-wise Expense Distribution (Pie Chart)** – See which categories take the biggest share of your spending  
+2. **Income vs Expense Overview (Bar Chart)** – Track monthly or yearly trends of earnings vs expenses  
+3. **Cash Flow Trend (Line Graph)** – Monitor financial health and flow over time
 
 ---
 
@@ -92,55 +90,57 @@
 - MongoDB running locally or Atlas connection string
 
 ### **Steps to Run Locally**
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/your-username/finance-tracker.git
-   cd finance-tracker
+
+#### 1. Clone the repository
+```bash
+git clone https://github.com/your-username/finance-tracker.git
+cd finance-tracker
 ````
 
-2. **Install dependencies**
+#### 2. Install dependencies
 
-   ```bash
-   # Install backend dependencies
-   cd backend
-   npm install
+```bash
+# Install backend dependencies
+cd backend
+npm install
 
-   # Install frontend dependencies
-   cd ../frontend
-   npm install
-   ```
+# Install frontend dependencies
+cd ../frontend
+npm install
+```
 
-3. **Environment variables**
-   Create a `.env` file in both **backend** and **frontend** with:
+#### 3. Environment variables
 
-   ```
-   # Backend .env
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret
-   GOOGLE_CLIENT_ID=your_google_client_id
-   GOOGLE_CLIENT_SECRET=your_google_client_secret
-   CLOUDINARY_URL=your_cloudinary_url
+Create a `.env` file in both **backend** and **frontend** with:
 
-   # Frontend .env
-   VITE_API_URL=http://localhost:8000
-   ```
+```
+# Backend .env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+GOOGLE_CLIENT_ID=your_google_client_id
+GOOGLE_CLIENT_SECRET=your_google_client_secret
+CLOUDINARY_URL=your_cloudinary_url
 
-4. **Run the app**
+# Frontend .env
+VITE_API_URL=http://localhost:8000
+```
 
-   ```bash
-   # Run backend
-   cd backend
-   npm run dev
+#### 4. Run the app
 
-   # Run frontend
-   cd ../frontend
-   npm start
-   ```
+```bash
+# Run backend
+cd backend
+npm run dev
 
-5. **Open in browser**
+# Run frontend
+cd ../frontend
+npm start
+```
 
-   * Frontend: `http://localhost:3000`
-   * Backend: `http://localhost:8000`
+#### 5. Open in browser
+
+* Frontend: `http://localhost:3000`
+* Backend: `http://localhost:8000`
 
 ---
 
@@ -149,5 +149,3 @@
 👉 **[Watch Demo Video](YOUR_VIDEO_LINK_HERE)**
 
 ---
-
-```
